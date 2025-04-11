@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Mohammed Wasif Ahmed} \\ \vspace{1pt}
+    \small +1-313-213-4876 $|$ \href{mailto:x@x.com}{\underline{iamwasif17@gmail.com}} $|$ \href{https://github.com/wasifahhme}{\underline{Github}}
+    %\href{https://linkedin.com/in/...}{\underline{linkedin.com/in/jake}} $|$
+    %\href{https://github.com/...}{\underline{github.com/jake}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+esumeItemListStart
+esumeItem{\resumeSubHeadingListStart}
+esumeItem{\resumeSubheading}
+esumeItem{{University Of Michigan}{Dearborn, MI}}
+esumeItem{{Masters In Computer and Information Science}{Jan. 2024 -- present}}
+esumeItem{\resumeSubheading}
+esumeItem{{JNTU Hyderabad}{Hyderabad, India}}
+esumeItem{{Bachelor's in Computer Science}{Aug. 2019 -- Aug. 2023}}
+esumeItem{\resumeSubHeadingListEnd}
+esumeItem{%-----------EXPERIENCE-----------}
+esumeItemListEnd\section{Experience}
+esumeItemListStart
+esumeItem{\resumeSubHeadingListStart}
+esumeItem{\resumeSubheading}
+esumeItem{{Undergradute Research Assistant}{Aug. 2022 -- Jun. 2023}}
+esumeItem{{JNTU Hyderabad}{Hyderabad, India}}
+esumeItem{\resumeItemListStart}
+esumeItem{\resumeItem{Developed a Virtual Network of sensor nodes using NS-2 and and deployed the Sink Node on the University Server}}
+esumeItem{\resumeItem{Developed an Algorithm (KSEEM) based on a Modified-BFS to connect the nodes creating optimal and viable routes and embedded RSA security algorithm into the proposed Algorithm}}
+esumeItem{\resumeItem{KSEEM Algorithm finds the optimal route that leads to the sink node that connects to the destination node. This route is responsible for secure and energy efficient transmission of the protected information.}}
+esumeItem{\resumeItemListEnd}
+esumeItem{% -----------Multiple Positions Heading-----------}
+esumeItem{%    \resumeSubSubheading}
+esumeItem{%     {Software Engineer I}{Oct 2014 - Sep 2016}}
+esumeItem{%     \resumeItemListStart}
+esumeItem{%        \resumeItem{Apache Beam}}
+esumeItem{%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}}
+esumeItem{%     \resumeItemListEnd}
+esumeItem{%    \resumeSubHeadingListEnd}
+esumeItem{%-------------------------------------------}
+esumeItem{\resumeSubheading}
+esumeItem{{Research Intern}{Dec. 2021 -- Jun. 2022}}
+esumeItem{{ACE Engineering College}{Hyderabad, India}}
+esumeItem{\resumeItemListStart}
+esumeItem{\resumeItem{Constructed and Deployed an Answering System that provides nearly precise answer to a question asked over a paragraph.}}
+esumeItem{\resumeItem{Constructed a Knowledge Graph to draw out the entities and relationships out of the paragraph that act as the source of information to the Answering System.}}
+esumeItem{\resumeItem{Utilized CQL in Neo4j for Knowledge Graph.}}
+esumeItem{\resumeItem{Explored NLTK and Spacey for the NLP part of the Project}}
+esumeItem{\resumeItem{Hosted and Maintained the system using Streamlit for a brief period of time}}
+esumeItem{\resumeItemListEnd}
+esumeItem{\resumeSubHeadingListEnd}
+esumeItem{%-----------PROJECTS-----------}
+esumeItemListEnd\section{Projects}
+esumeItemListStart
+esumeItem{\resumeSubHeadingListStart}
+esumeItem{\resumeProjectHeading}
+esumeItem{{\textbf{Advanced Traffic Signal Control System} $|$ \emph{Python, SQL, PostgreSQL, SUMO, CityFlow, FastAPI}}{Spring 2025}}
+esumeItem{\resumeItemListStart}
+esumeItem{\resumeItem{Engineered a real-time data ingestion pipeline to process live traffic data using Python and PostgreSQL, simulating realistic traffic conditions across multiple intersections.}}
+esumeItem{\resumeItem{Developed modular data preprocessing workflows for extracting temporal features and normalizing traffic volume, preparing datasets for machine learning models.}}
+esumeItem{\resumeItem{Integrated traffic simulation tools like SUMO and CityFlow to model urban traffic dynamics and support reinforcement learning environments.}}
+esumeItem{\resumeItem{Collaborated using Git and GitHub to follow an industry-style development workflow with branching, version control, and feature-based commits.}}
+esumeItem{\resumeItemListEnd}
+esumeItem{\resumeProjectHeading}
+esumeItem{{\textbf{Customer Support Chatbot} $|$ \emph{Node.js, React.js, Dialogflow ED Trial Version, MongoDB}}{Summer 2024}}
+esumeItem{\resumeItemListStart}
+esumeItem{\resumeItem{Developed a chatbot with NLP integration to handle customer queries, reducing response time by 60\%}}
+esumeItem{\resumeItem{Built a dynamic React.js frontend and secure Node.js backend, using MongoDB for user interaction history and}
+esumeItem{personalized responses.}}
+esumeItem{\resumeItemListEnd}
+esumeItem{\resumeProjectHeading}
+esumeItem{{\textbf{Chord Protocol} $|$ \emph{Python, Hashlib}}{Spring 2024}}
+esumeItem{\resumeItemListStart}
+esumeItem{\resumeItem{Designed and implemented a P2P network using the Chord Protocol to manage dynamic node addition/removal.}}
+esumeItem{\resumeItem{Developed consistent hashing, successor/predecessor finding, and finger table updates for efficient data lookup, ensuring}
+esumeItem{scalability and reliability gest features and get feedback about the plugin}}
+esumeItem{\resumeItemListEnd}
+esumeItem{\resumeSubHeadingListEnd}
+esumeItem{%}
+esumeItem{%-----------PROGRAMMING SKILLS-----------}
+esumeItemListEnd\section{Technical Skills}
+esumeItemListStart
+esumeItem{\begin{itemize}[leftmargin=0.15in, label={}]}
+esumeItem{\small{\item{}
+esumeItem{\textbf{Languages}{: Java, Python, C/C++, SQL (Postgres, MongoDB), JavaScript, HTML/CSS, NLP} \\}
+esumeItem{\textbf{Frameworks}{: React.js, Node.js, Express.js, FastAPI} \\}
+esumeItem{\textbf{Developer Tools}{: Git , VS Code, SUMO, CityFlow, NS-2, JSON } \\}
+esumeItem{\textbf{Libraries}{: Pandas, NumPy, Matplotlib, scikit-learn, NLTK, Spacey, Streamlit}}
+esumeItem{}}}
+esumeItem{\end{itemize}}
+esumeItem{%-------------------------------------------}
+esumeItem{\end{document}}
+esumeItemListEnd\end{document}
